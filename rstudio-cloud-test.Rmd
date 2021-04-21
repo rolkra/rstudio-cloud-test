@@ -5,11 +5,14 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(explore)
 ```
 
 ## Simple Plot
 
-```{r pressure, echo=FALSE}
-plot(iris$Sepal.Length, iris$Sepal.Width, main = "Plot Nr 1")
+```{r}
+explore(iris, Sepal.Length, Sepal.Width) +
+    ggtitle("Plot Nr 2")
 ```
 
