@@ -13,6 +13,6 @@ library(explore)
 
 ```{r}
 explore(iris, Sepal.Length, Sepal.Width) +
-    ggtitle("Plot Nr 1")
+    ggtitle("Plot Nr 2")
 ```
 
